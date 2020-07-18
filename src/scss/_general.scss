@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  min-height: inherit;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}

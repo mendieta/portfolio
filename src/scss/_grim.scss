@@ -1,0 +1,94 @@
+.grim {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(32, 3.125vw);
+  grid-template-rows: repeat(32, 3.125vh);
+}
+
+.grim__item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-link {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &-title {
+    font-family: "tex-bold", serif;
+    line-height: 85.4%;
+    text-transform: capitalize;
+    color: white;
+    margin: 0 1rem;
+  }
+
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:first-child {
+    background-color: #fee440;
+    grid-area: 1 / 1 / 17 / 9;
+
+    .grim__item-title {
+      font-size: 3rem;
+      transform: translateY(40%);
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: #f15bb5;
+    grid-area: 1 / 9 / 17 / 17;
+
+    .grim__item-img {
+      background-image: url("../assets/images/p3.png");
+    }
+
+    .grim__item-title {
+      font-size: 2.5rem;
+      margin-top: 100%;
+      text-align: center;
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: #9b5de5;
+    grid-area: 17 / 1 / 33 / 17;
+
+    .grim__item-img {
+      background-image: url("../assets/images/localcook.png");
+    }
+
+    .grim__item-title {
+      font-size: 9rem;
+      margin-top: 4.5rem;
+      margin-left: 17rem;
+    }
+  }
+
+  &:nth-child(4) {
+    background-color: #00bbf9;
+    grid-area: 1 / 17 / 33 / 33;
+
+    .grim__item-img {
+      background-image: url("../assets/images/tesla.png");
+    }
+
+    .grim__item-title {
+      font-size: 13rem;
+      margin-top: 6.5rem;
+    }
+  }
+}
